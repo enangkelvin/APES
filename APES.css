@@ -1,0 +1,299 @@
+body{
+	font-family: sans-serif;
+	width:98%;
+	background:black;
+	font-size: 18px;
+	color:white;
+	margin: auto;
+}
+.slider{
+	justify-content: center;
+	display:block;
+	align-items: center;
+	width: 98%;
+	height: 180px;
+	border-radius: 10px;
+	clear: both;
+}
+.slider h5{
+	font-size: 14px;
+	position: absolute;
+	background: #00001a;
+	left:25%;
+	top:30px;
+	width: 50%;
+}
+.slides{
+	display:flex;
+    margin: 20px;
+}
+.slide-padding{
+	width: 304px;
+	height: 90px;
+	text-align: center;
+	justify-content: center;
+	clear: both;
+	margin: 30px;
+    background: #00001a;
+    border: 2px dashed  #00004d;
+ 
+}
+.slide p{
+	width:fit-content;
+	margin-right: 60px;
+	height: 64px;
+	margin-top: 40px;
+	font-size: 18px;
+	float: right;
+	font-weight: bold;
+}
+.slides input{
+	display: none;
+}
+#welcomeIntro img{
+	width: 50%;
+}
+.slide {
+	width: 100%;
+	transition:2s;
+	clear: both;
+}
+.slide img,.slide first img{
+	width: 64px;
+	height: 64px;
+	margin-right: 10px;
+	margin-left: 14px;
+	margin-bottom: 20px;
+	margin-top: 12px;
+}
+.navigation-manual {
+display: none;
+}
+.manual-btn{
+	border:2px solid white;
+	padding:5px;
+	border-radius:10px;
+	cursor: pointer;
+	transition:1s;
+
+}
+.manual-btn:not(:last-child){
+	margin-right: 30px;
+}
+.manual-btn:hover{
+	background: white;
+}
+#radio1:checked ~ .first {
+	margin-left: 0%;
+}
+#radio2:checked ~ .first {
+	margin-left: -100%;
+}
+#radio3:checked ~ .first {
+	margin-left: -200%;
+}
+#radio4:checked ~ .first {
+	margin-left: -300%;
+}
+
+.navigation-auto{
+	position: absolute;
+	display: flex;
+	width: 360px;
+	margin: auto;
+	justify-content: center;
+	top: 26%;
+}
+.navigation-auto div{
+	border:2px solid white;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+	margin-right: 30px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: white;
+
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: white;
+	
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: white;
+	
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background: white;
+}
+
+#welcomeIntro{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#welcomeIntro p{
+	padding-top: 30px;
+	font-size: 27px;
+	line-height: 40px;
+	text-shadow:1px 2px 20px #f7931e;
+	margin:0px;
+}
+#apesRules ul{
+	padding: 0px;
+}
+#socialLinks{
+	margin-top: 60px;
+}
+#socialLinks ul li {
+ text-decoration: none;
+ display: inline;
+ margin-right: 30px;
+ margin-left: 15px;
+}
+#copyRight{
+	margin-bottom: 30px;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 12px;
+}
+i{
+	font-size:20px;
+	color: blue;
+}
+#apesRules ul li {
+	list-style: none;
+	margin-top: 15px;
+}
+#blogPosts, #apesRules{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.posts {
+	text-align: justify;
+	line-height: 25px;
+	margin-top: 80px;
+}
+#navigationList p {
+	font-family: 'Potta One', cursive;
+	text-shadow:4px 4px #000c66;
+	margin-left: 20px;
+
+}
+#welcomeIntro a {
+	text-decoration: none;
+	color: blue;
+}
+#welcomeIntro button{
+	font-family: 'Potta One', cursive;
+	background: white;
+	color: white;
+	text-align: center;
+	margin: auto;
+	margin-top: 65px;
+	height: 40px;
+	width: 230px;
+	border:1px solid #f7931e;
+	font-size: 14px;
+	border-radius: 25px;
+}
+#welcomeIntro i {
+	font-size: 14px;
+	margin-right: 3px;
+}
+h5 i {
+	margin-right: 10px;
+}
+h1 {
+	width: fit-content;
+	text-align: center;
+	margin:auto;
+}
+#blogPosts {
+	margin-top: 100px;
+}
+.posts h2 {
+	text-align: left;
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+	body{
+		width: 90%;
+	}
+	#welcomeIntro{
+	width: 50%;
+	margin:auto;
+	text-align: center;
+	clear: both;
+	}
+	#welcomeIntro img{
+		width: 35%;
+	}
+	#apesRules{
+		clear: both;
+		margin-top: 80px;
+	}
+	.slider h5 {
+		font-size: 18px;
+		top:25px;
+		width: 30%;
+		left: 35%;
+		text-align: center;
+		background:transparent;
+	}
+	.posts {
+	margin-top: 100px;
+	width: 100%;
+	margin-right: 5%;
+	clear: both;
+}
+.posts p{
+	float: right;
+	clear: both;
+	width: 50%;
+	margin-left:20px;
+	margin-right: 5%;
+	display: inline;
+	line-height: 35px;
+}
+.posts img {
+	width: 35%;
+}
+#socialLinks ul li {
+ margin-right: 50px;
+ margin-left: 40px;
+}
+#copyRight{
+	margin-bottom: 30px;
+	margin-top: 40px;
+	font-size: 12px;
+	align-content: center;
+	clear: both;
+}
+#socialLinks{
+	text-align: center;
+	margin: auto;
+}
+#radio1:checked ~ .first {
+	margin-left: -10%;
+}
+#radio2:checked ~ .first {
+	margin-left: -20%;
+}
+#radio3:checked ~ .first {
+	margin-left: -25%;
+}
+#radio4:checked ~ .first {
+	margin-left: -27%;
+}
+.navigation-auto{
+top: 30%;	
+ left:35%;
+ width: 30%;
+}
+}
