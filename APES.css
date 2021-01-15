@@ -6,6 +6,27 @@ body{
 	color:white;
 	margin: auto;
 }
+.cover{
+	height:700px;
+	background-image: url(background.svg);
+	background-attachment: fixed;
+	position: relative;
+	filter: blur(3px);
+	-webkit-filter:blur(3px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	clear: both;
+}
+.covercover{
+	background-color: rgba(0,0,0,0.7);
+	font-weight: bold;
+	position:absolute;
+	top:0px;
+	left: 0%;
+	width: 100%;
+	height:700px;
+	clear: both;
+}
 .slider{
 	justify-content: center;
 	display:block;
@@ -33,7 +54,7 @@ body{
 	text-align: center;
 	justify-content: center;
 	clear: both;
-	margin:30px;
+	margin: 30px;
     background: #00001a;
     border: 2px dashed  #00004d;
  
@@ -131,7 +152,6 @@ display: none;
 
 #welcomeIntro{
 	width: 100%;
-	height: 100%;
 	text-align: center;
 }
 #welcomeIntro p{
@@ -280,13 +300,13 @@ h1 {
 	margin: auto;
 }
 #radio1:checked ~ .first {
-	margin-left: -10%;
+	margin-left: 1%;
 }
 #radio2:checked ~ .first {
-	margin-left: -20%;
+	margin-left: -10%;
 }
 #radio3:checked ~ .first {
-	margin-left: -25%;
+	margin-left: -20%;
 }
 #radio4:checked ~ .first {
 	margin-left: -27%;
