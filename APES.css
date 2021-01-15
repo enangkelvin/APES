@@ -41,7 +41,6 @@ body{
 	height:700px;
 	top: 0px;
 	left: 0px;
-	filter: blur(2px);
 }
 .set div{
 	position: absolute;
@@ -49,32 +48,32 @@ body{
  }
  .set div:nth-child(1){
  	left:85%;
- 	animation: animates 70s linear infinite;
+ 	animation: animates 10s linear infinite;
  	animation-delay: -5;
  }
  .set div:nth-child(2){
  	left:30%;
- 	animation: animates 120s linear infinite;
+ 	animation: animates 30s linear infinite;
  	animation-delay: -3s;
  }
  .set div:nth-child(3){
  	left:45%;
- 	animation: animates 200s linear infinite;
+ 	animation: animates 50s linear infinite;
  	animation-delay:0s;
  }
  .set div:nth-child(4){
  	left:20%;
  	animation: animates 100s linear infinite;
- 	animation-delay: -40s;
+ 	animation-delay: -5s;
  }
  .set div:nth-child(5){
  	left:60%;
- 	animation: animates 180s linear infinite;
+ 	animation: animates 150s linear infinite;
  	animation-delay: -100s;
  }
  .set div:nth-child(6){
  	left:5%;
- 	animation: animates 80s linear infinite;
+ 	animation: animates 70s linear infinite;
  }
  @keyframes animates{ 
  	0%
@@ -106,12 +105,10 @@ body{
  	}
  }
  .set2{
- 	transform: scale(0.6) rotateY(180deg);
- 	filter: blur(4px);
+ 	transform: scale(2) rotateY(180deg);
  }
 .set3{
  	transform: scale(0.8) rotateX(180deg);
- 	filter: blur(4px);
  }
 .slider{
 	justify-content: center;
