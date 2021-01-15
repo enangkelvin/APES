@@ -105,10 +105,10 @@ body{
  	}
  }
  .set2{
- 	transform: scale(2) rotateY(180deg);
+ 	transform: scale(0.5) rotateY(180deg);
  }
 .set3{
- 	transform: scale(0.8) rotateX(180deg);
+ 	transform: scale(0.7) rotateX(180deg);
  }
 .slider{
 	justify-content: center;
