@@ -1,10 +1,34 @@
 body{
 	font-family: sans-serif;
 	width:98%;
-	background:black;
+	background:#090b11;
 	font-size: 18px;
 	color:white;
 	margin: auto;
+}
+i{
+	font-size:20px;
+	color: blue;
+}
+.error {
+	color:#6f7eb1;
+	font-size: 80px;
+}
+.error:nth-child(1){
+	position: absolute;
+ top:5%;
+}
+.error:nth-child(2){
+	position: absolute;
+ top:20%;
+}
+.error:nth-child(3){
+	position: absolute;
+ top:15%;
+}
+.error:nth-child(4){
+	position: absolute;
+ top:30%;
 }
 .cover{
 	height:700px;
@@ -29,7 +53,7 @@ body{
 }
 .covercover section {
 	width: 100%;
-	height: 700px;
+	height: 2000px;
 	background: transparent;
 	position: absolute;
 	top: 0px;
@@ -76,6 +100,92 @@ body{
  	animation: animates 70s linear infinite;
  }
  @keyframes animates{ 
+ 	0%
+ 	{
+ 		opacity:-0.5;
+ 		top:-10%;
+ 		transform: translateX(-20px) rotate(0deg);
+ 	}
+ 	10%{
+ 		opacity: 0;
+ 		transform: translateX(-10px) rotate(30deg);
+ 	}
+ 	20%{
+ 		transform:translateX(0px) rotate(50deg);
+ 	}
+ 	40%{
+ 		transform:translateX(10px) rotate(100deg);
+ 	}
+ 	60%{
+ 		transform:translateX(20px) rotate(140deg);
+ 	}
+ 	80%{
+ 		transform:translateX(-20px) rotate(220deg);
+ 	}
+ 	100%
+ 	{
+ 		top:100%;
+ 		transform: translateX(-20px) rotate(360deg);
+ 	}
+ }
+ .set2{
+ 	transform: scale(0.5) rotateY(180deg);
+ }
+.set3{
+ 	transform: scale(0.7) rotateX(180deg);
+ }
+ .slide a{
+ 	color: blue;
+ }
+ #blogPosts section {
+	width: 100%;
+	height: 700px;
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.set {
+	position: absolute; 
+	width: 100%;
+	height:700px;
+	top: 0px;
+	left: 0px;
+}
+.set div{
+	position: absolute;
+	display: block;
+ }
+ .set div:nth-child(1){
+ 	left:85%;
+ 	animation: animated 10s linear infinite;
+ 	animation-delay: -5;
+ }
+ .set div:nth-child(2){
+ 	left:30%;
+ 	animation: animated 30s linear infinite;
+ 	animation-delay: -3s;
+ }
+ .set div:nth-child(3){
+ 	left:45%;
+ 	animation: animated 50s linear infinite;
+ 	animation-delay:0s;
+ }
+ .set div:nth-child(4){
+ 	left:20%;
+ 	animation: animated 100s linear infinite;
+ 	animation-delay: -5s;
+ }
+ .set div:nth-child(5){
+ 	left:60%;
+ 	animation: animated 150s linear infinite;
+ 	animation-delay: -100s;
+ }
+ .set div:nth-child(6){
+ 	left:5%;
+ 	animation: animated 70s linear infinite;
+ }
+ @keyframes animated{ 
  	0%
  	{
  		opacity:-0.5;
@@ -246,6 +356,9 @@ display: none;
 }
 #apesRules ul{
 	padding: 0px;
+	background-color: #121521;
+	padding:5px;
+	border-radius: 20px;
 }
 #socialLinks{
 	margin-top: 60px;
@@ -262,17 +375,22 @@ display: none;
 	text-align: center;
 	font-size: 12px;
 }
-i{
-	font-size:20px;
-	color: blue;
-}
 #apesRules ul li {
 	list-style: none;
 	margin-top: 15px;
 }
 #blogPosts, #apesRules{
-	margin-right: 10px;
-	margin-left: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#apesRules{
+	background: #090b11;
+	padding-top: 50px;
+	position:relative;
+}
+#apesRules span{
+	padding-bottom: 7px;
+	border-bottom:  2px solid #8b97c1;
 }
 .posts {
 	text-align: justify;
@@ -283,7 +401,13 @@ i{
 	font-family: 'Potta One', cursive;
 	text-shadow:4px 4px #000c66;
 	margin-left: 20px;
-
+} 
+#navigationList {
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	background-color: #090b11;
+	z-index: 1;
 }
 #welcomeIntro a {
 	text-decoration: none;
@@ -308,6 +432,8 @@ i{
 }
 h5 i {
 	margin-right: 10px;
+	font-size: 20px;
+	color:#6f7eb1;
 }
 h1 {
 	width: fit-content;
@@ -316,6 +442,7 @@ h1 {
 }
 #blogPosts {
 	margin-top: 100px;
+	position: relative;
 }
 .posts h2 {
 	text-align: left;
@@ -324,9 +451,27 @@ h1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 768px){
 	body{
-		width: 90%;
+		width: 100%;
 	}
 	#welcomeIntro{
 	width: 50%;
@@ -339,7 +484,7 @@ h1 {
 	}
 	#apesRules{
 		clear: both;
-		margin-top: 80px;
+		padding-top:80px;
 	}
 	.slider h5 {
 		font-size: 18px;
@@ -398,5 +543,12 @@ h1 {
 top: 30%;	
  left:35%;
  width: 30%;
+}
+#apesRules ul{
+	width:40%;
+	margin-left:30%;
+	margin-right: 30%;
+	padding: 30px;
+	border-radius: 25px;
 }
 }
