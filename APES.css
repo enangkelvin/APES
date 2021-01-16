@@ -13,7 +13,7 @@ i{
 
 .cover{
 	height:700px;
-	background-image: url(apesGif1.gif);
+	background-image: url(200.gif);
 	background-attachment: fixed;
 	background-position: center;
 	position: relative;
@@ -207,6 +207,7 @@ i{
  }
 .slider{
 	justify-content: center;
+	margin-top: 50px;
 	display:block;
 	align-items: center;
 	width: 98%;
@@ -223,6 +224,7 @@ i{
 	width: 50%;
 }
 .slides{
+	width:400%;
 	display:flex;
     margin: 20px;
 }
@@ -232,6 +234,7 @@ i{
 	text-align: center;
 	justify-content: center;
 	clear: both;
+	margin-top: 60px;
 	margin: 30px;
     background: #121521;
     border: 2px dashed  #242b42;
@@ -253,7 +256,7 @@ i{
 	width: 50%;
 }
 .slide {
-	width: 100%;
+	width:380px;
 	transition:2s;
 	clear: both;
 }
@@ -286,13 +289,13 @@ display: none;
 	margin-left: 0%;
 }
 #radio2:checked ~ .first {
-	margin-left: -100%;
+	margin-left: -380px;
 }
 #radio3:checked ~ .first {
-	margin-left: -200%;
+	margin-left: -760px;
 }
 #radio4:checked ~ .first {
-	margin-left: -300%;
+	margin-left: -1140px;
 }
 
 .navigation-auto{
@@ -301,7 +304,7 @@ display: none;
 	width: 360px;
 	margin: auto;
 	justify-content: center;
-	top: 22%;
+	top: 23%;
 }
 .navigation-auto div{
 	border:2px solid white;
@@ -340,7 +343,6 @@ display: none;
 	margin:0px;
 }
 #apesRules ul{
-	padding: 0px;
 	background-color: #121521;
 	padding:5px;
 	border-radius: 20px;
@@ -369,12 +371,12 @@ display: none;
 	padding-left: 10px;
 }
 #apesRules{
-	background-image: url(300.gif);
+	background-image: url(200.gif);
 	padding-top: 50px;
 	position:relative;
 }
 #blogPosts {
-	background-image: url(300.gif);
+	background-image: url(200.gif);
 }
 #apesRules span{
 	padding-bottom: 7px;
@@ -429,7 +431,7 @@ h1 {
 	margin:auto;
 }
 #blogPosts {
-	margin-top: 100px;
+	padding-top: 100px;
 	position: relative;
 }
 .posts h2 {
@@ -528,7 +530,7 @@ h1 {
 	margin-left: -27%;
 }
 .navigation-auto{
-top: 30%;	
+top: 23%;	
  left:35%;
  width: 30%;
 }
@@ -575,5 +577,8 @@ top: 30%;
 	position: absolute;
 	bottom:-5%;
  right:25%;
+}
+.slides{
+	width: 100%;
 }
 }
