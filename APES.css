@@ -23,6 +23,9 @@ i{
 	background-repeat: no-repeat;
 	clear: both;
 }
+.posts p {
+    padding: 10px;
+}
 .covercover{
 	background-color: rgba(0,0,0,0.7);
 	font-weight: bold;
@@ -35,7 +38,6 @@ i{
 }
 .covercover section {
 	width: 100%;
-	height: 2000px;
 	background: transparent;
 	position: absolute;
 	top: 0px;
@@ -268,69 +270,6 @@ i{
 	margin-bottom: 20px;
 	margin-top: 12px;
 }
-.navigation-manual {
-display: none;
-}
-.manual-btn{
-	border:2px solid white;
-	padding:5px;
-	border-radius:10px;
-	cursor: pointer;
-	transition:1s;
-
-}
-.manual-btn:not(:last-child){
-	margin-right: 30px;
-}
-.manual-btn:hover{
-	background: white;
-}
-#radio1:checked ~ .first {
-	margin-left: 0%;
-}
-#radio2:checked ~ .first {
-	margin-left: -380px;
-}
-#radio3:checked ~ .first {
-	margin-left: -760px;
-}
-#radio4:checked ~ .first {
-	margin-left: -1140px;
-}
-
-.navigation-auto{
-	position: absolute;
-	display: flex;
-	width: 360px;
-	margin: auto;
-	justify-content: center;
-	top: 23%;
-}
-.navigation-auto div{
-	border:2px solid white;
-	padding: 5px;
-	border-radius: 10px;
-	transition: 1s;
-}
-.navigation-auto div:not(:last-child){
-	margin-right: 30px;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-	background: white;
-
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-	background: white;
-	
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-	background: white;
-	
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-	background: white;
-}
-
 #welcomeIntro{
 	width: 100%;
 	text-align: center;
@@ -366,17 +305,17 @@ display: none;
 	list-style: none;
 	margin-top: 15px;
 }
-#blogPosts, #apesRules{
-	padding-right: 10px;
-	padding-left: 10px;
-}
 #apesRules{
+	padding-left: 10px;
+	padding-right: 10px;
 	background-image: url(rocket.gif);
 	padding-top: 50px;
 	position:relative;
 	padding-bottom:30px;
 }
 #blogPosts {
+	padding-left: 10px;
+	padding-right: 10px;
 	background-image: url(rocket.gif);
 }
 #apesRules span{
@@ -386,7 +325,11 @@ display: none;
 .posts {
 	text-align: justify;
 	line-height: 25px;
-	margin-top: 80px;
+	margin-top: 50px;
+}
+.posts img{
+width: 350px;
+height: 180px;	
 }
 #navigationList p {
 	font-family: 'Potta One', cursive;
@@ -432,13 +375,12 @@ h1 {
 	margin:auto;
 }
 #blogPosts {
-	padding-top: 100px;
+	padding-top:10px;
 	position: relative;
 }
 .posts h2 {
 	text-align: left;
 }
-
 
 
 
@@ -488,6 +430,7 @@ h1 {
 	.posts {
 	margin-top: 100px;
 	width: 100%;
+	margin-left: 2%;
 	margin-right: 5%;
 	clear: both;
 }
@@ -495,6 +438,7 @@ h1 {
 	float: right;
 	clear: both;
 	width: 50%;
+	margin-top:0px;
 	margin-left:20px;
 	margin-right: 5%;
 	display: inline;
@@ -517,68 +461,16 @@ h1 {
 #socialLinks{
 	text-align: center;
 	margin: auto;
-}
-#radio1:checked ~ .first {
-	margin-left: 1%;
-}
-#radio2:checked ~ .first {
-	margin-left: -10%;
-}
-#radio3:checked ~ .first {
-	margin-left: -20%;
-}
-#radio4:checked ~ .first {
-	margin-left: -27%;
-}
-.navigation-auto{
-top: 23%;	
- left:35%;
- width: 30%;
+	clear: both;
 }
 #apesRules ul{
-	width:40%;
-	margin-left:30%;
-	margin-right: 30%;
+	width:80%;
+	margin-left:10%;
+	margin-right: 10%;
 	padding: 30px;
 	border-radius: 25px;
 }
-.fa-exclamation-triangle:before {
-    content: "\f071";
-}
-.error:nth-child(1){
-	position: absolute;
- top:20%;
- left: 40%;
-}
-.error:nth-child(2){
-	position: absolute;
- bottom:18%;
- left: 15%;
-}
-.error {
-	color:#242b42;
-	font-size: 80px;
-}
-.error:nth-child(3){
-	position: absolute;
-	bottom:40%;
- right:65%;
-}
-.error:nth-child(4){
-	position: absolute;
-	top:10%;
- right:10%;
-}
-.error:nth-child(5){
-	position: absolute;
-	top:35%;
- left:60%;
-}
-.error:nth-child(6){
-	position: absolute;
-	bottom:-5%;
- right:25%;
-}
+
 .slides{
 	width: 100%;
 }
